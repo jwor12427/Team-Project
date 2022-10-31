@@ -1,0 +1,136 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			http-equiv="X-UA-Compatible"
+			content="IE=edge"
+		/>
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>로그인</title>
+		<link
+			rel="stylesheet"
+			href="../html/assets/css/style.css"
+		/>
+
+		<style></style>
+	</head>
+	<body>
+		<header id="header">
+			<div class="header__inner container">
+				<div class="logo">
+					<figure>
+						<img
+							src="../assets/img/logo.png"
+							alt="로고이미지"
+						/>
+					</figure>
+				</div>
+				<div class="right">
+					<div class="signIn">
+						<span class="login"><a href="login.html">Sign In</a></span>
+						<span class="myPage"><a href="#">마이페이지</a></span>
+					</div>
+					<nav class="nav">
+						<ul>
+							<li>
+								<a href="#"><span>식물모아</span></a>
+							</li>
+							<li>
+								<a href="#"><span>칼럼</span></a>
+							</li>
+							<li>
+								<a href="#"><span>스토리</span></a>
+							</li>
+							<li>
+								<a href="#"><span>스토어</span></a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<!-- header -->
+		<div
+			id="login__wrap_bg"
+			class="open"
+		>
+			<section id="login__box">
+				<div class="login__inner">
+					<h2>이메일 찾기</h2>
+					<form
+						action="loginIdFindSave.php"
+						method="post"
+					>
+						<fieldset>
+							<legend class="blind">아이디 찾기 폼</legend>
+							<div>
+								<label
+									for="loginName"
+									class="blind"
+									>이름</label
+								>
+								<input
+									type="text"
+									name="loginName"
+									id="loginName"
+									placeholder="이름"
+									required
+								/>
+							</div>
+							<div>
+								<label
+									for="loginPhone"
+									class="blind"
+									>휴대폰번호</label
+								>
+								<input
+									type="text"
+									name="loginPhone"
+									id="loginPhone"
+									placeholder="휴대폰번호"
+									required
+								/>
+							</div>
+							<button
+								type="submit"
+								class="btn1"
+							>
+								이메일 찾기
+							</button>
+							<button
+								type="submit"
+								class="btn3"
+							>
+								<a href="loginPwFind.php">비밀번호 찾기</a>
+							</button>
+						</fieldset>
+					</form>
+				</div>
+				<a
+					class="login__close"
+					href="../main/main.php"
+				></a>
+			</section>
+		</div>
+		<div class="area">
+			<ul class="circles">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+	</body>
+</html>

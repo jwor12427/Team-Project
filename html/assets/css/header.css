@@ -1,0 +1,100 @@
+#header {
+  font-family: "NixgonFonts";
+  width: 100%;
+  background-color: #f6f5ef;
+  border-bottom: 1px solid #515151;
+  border-top: 2px solid #333;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__inner .logo {
+  width: 20%;
+}
+
+.header__inner .logo img {
+  width: 50px;
+  height: 50px;
+}
+
+.header__inner .right {
+  width: 80%;
+  display: inline-block;
+  text-align: right;
+  margin-bottom: 40px;
+  font-size: 16px;
+}
+
+.header__inner .right .signIn {
+  margin-top: 30px;
+}
+
+.header__inner .right .login {
+  margin-right: 40px;
+}
+
+.header__inner .right .logout {
+  margin-right: 40px;
+}
+
+.header__inner .right .myPage {
+  margin-right: 45px;
+}
+
+.header__inner .right .nav {
+  margin-top: 15px;
+}
+
+.header__inner .right .nav li {
+  display: inline;
+  padding-left: 30px;
+}
+
+.main__search {
+  width: 2%;
+  float: right;
+}
+
+@media (max-width: 550px) {
+  .header__inner .logo {
+    width: 10%;
+  }
+
+  .header__inner .logo img {
+    width: 35px;
+    height: 35px;
+  }
+
+  .header__inner .right {
+    width: 90%;
+    margin-bottom: 30px;
+    font-size: 14px;
+  }
+
+  .header__inner .right .signIn {
+    margin-top: 30px;
+  }
+
+  .header__inner .right .login {
+    margin-right: 20px;
+  }
+
+  .header__inner .right a.logout {
+    margin-right: 20px;
+  }
+
+  .header__inner .right .myPage {
+    margin-right: 30px;
+  }
+
+  .header__inner .right .nav li {
+    padding-left: 13px;
+  }
+  .main__search {
+    width: 5%;
+  }
+}
