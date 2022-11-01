@@ -133,15 +133,15 @@
             <ul class="columnView__keywords">
               <li class="columnView__keyword"><a href="https://youtu.be/wa0auX1J99Q" target="_blank">초보자 식물키우기 팁</a><img
 									src="../html/assets/img/column__go.svg"
-									alt="유투브 바로가기"
+									alt="유튜브 바로가기"
 								/></li>
               <li class="columnView__keyword"><a href="http://homming.dothome.co.kr/plantMoa/plantmoaView.php">몬스테라 키우기</a><img
 									src="../html/assets/img/column__go.svg"
-									alt="유투브 바로가기"
+									alt="식물모아 바로가기"
 								/></li>
               <li class="columnView__keyword"><a href="https://youtu.be/0D5mb6Y-4Ac" target="_blank">식물 영상 팁⭐</a><img
 									src="../html/assets/img/column__go.svg"
-									alt="유투브 바로가기"
+									alt="유튜브 바로가기"
 								/></li>
             </ul>
           </div>

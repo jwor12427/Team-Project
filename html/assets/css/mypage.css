@@ -367,10 +367,19 @@
 	color: #b7c2dd;
 	position: absolute;
 }
-.put .input {
+.hide .input {
 	background-color: transparent;
 	opacity: 0.01;
 	position: relative;
+}
+.put .input {
+	margin: 26px 0 27px 0;
+	border-radius: 23.5px;
+	border: none;
+	background-color: #e7f2ea;
+	padding: 16px 33px 15px 33px;
+	color: #b7c2dd;
+	/* position: absolute; */
 }
 
 .put .input::placeholder {

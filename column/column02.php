@@ -122,7 +122,7 @@
             <ul class="columnView__keywords">
               <li class="columnView__keyword"><a href="https://youtu.be/d9wPldFE6ns" target="_blank">수경 재배 추천</a><img
 									src="../html/assets/img/column__go.svg"
-									alt="유투브 바로가기"
+									alt="유튜브 바로가기"
 								/></li>
               <li class="columnView__keyword"><a href="http://homming.dothome.co.kr/plantMoa/plantmoaView02.php">싱고니움 추천</a><img
 									src="../html/assets/img/column__go.svg"
@@ -130,7 +130,7 @@
 								/></li>
               <li class="columnView__keyword"><a href="https://youtu.be/FwjhYuTGnkg" target="_blank">잘 자라는 식물 추천</a><img
 									src="../html/assets/img/column__go.svg"
-									alt="유투브 바로가기"
+									alt="유튜브 바로가기"
 								/></li>
             </ul>
           </div>

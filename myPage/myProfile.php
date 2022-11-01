@@ -79,7 +79,7 @@
                                         <p class="p">프로필을 변경합니다.</p>
                                     </div>
                                 </div>
-                                <div class="put">
+                                <div class="put hide">
                                     <label for="youFile" class="input-profile-button blind">파일</label>
                                     <span class="inp_placeholder_my" id="inp_placeholder_my">사진을 첨부해 주세요</span>
                                     <input class="input" type="file" name="youFile" id="youFile"
