@@ -2,8 +2,6 @@
   font-family: "NixgonFonts";
   width: 100%;
   background-color: #f6f5ef;
-  border-bottom: 1px solid #515151;
-  border-top: 2px solid #333;
 }
 
 .header__inner {
@@ -55,8 +53,10 @@
 }
 
 .main__search {
+  display: inline;
+}
+.main__search img {
   width: 2%;
-  float: right;
 }
 
 @media (max-width: 550px) {

@@ -46,7 +46,7 @@
     $searchKeyword = $connect -> real_escape_string(trim($searchKeyword));
     $searchOption = $connect -> real_escape_string(trim($searchOption));
 
-    $sql = "SELECT b.myBoardID, b.boardTitle, b.boardContents, m.youName, b.regTime, b.boardView FROM myBoard b JOIN myAdminMember m ON(b.myMemberID = m.myMemberID)";
+    $sql = "SELECT b.myBoardID, b.boardTitle, b.boardContents, m.youNickName, b.regTime, b.boardView FROM myBoard b JOIN myAdminMember m ON(b.myMemberID = m.myMemberID)";
 
     switch($searchOption){
         case "title":
@@ -56,7 +56,7 @@
             $sql .= "WHERE b.boardContents LIKE '%{$searchKeyword}%' ORDER BY myBoardID DESC ";
             break;
         case "name":
-            $sql .= "WHERE m.youName LIKE '%{$searchKeyword}%' ORDER BY myBoardID DESC ";
+            $sql .= "WHERE m.youNickName LIKE '%{$searchKeyword}%' ORDER BY myBoardID DESC ";
             break;
     }
 
@@ -104,13 +104,13 @@
                 echo "<tr>";
                 echo "<td>".$info['myBoardID']."</td>";
                 echo "<td><a href='boardView.php?myBoardID={$info['myBoardID']}'>".$info['boardTitle']."</td>";
-                echo "<td>".$info['youName']."</td>";
+                echo "<td>".$info['youNickName']."</td>";
                 echo "<td>".date('Y-m-d', $info['regTime'])."</td>";
                 echo "<td>".$info['boardView']."</td>";
                 echo "</tr>";
             }
         } else {
-            echo "<tr><td colspan='4'>게시글이 없습니다.</td></tr>";    
+            echo "<tr><td colspan='5'>게시글이 없습니다.</td></tr>";    
         }
     }
 ?>
@@ -152,11 +152,12 @@
     }
 
     //다음 페이지, 마지막 페이지
-    if($page != $endPage) {
+    if($page > 1 && $page != $endPage) {
         $nextPage = $page + 1;
         echo "<li><a href='boardSearch.php?page={$nextPage}&searchKeyword={$searchKeyword}&searchOption={$searchOption}'>&gt;</a></li>";
         echo "<li><a href='boardSearch.php?page={$boardCount}&searchKeyword={$searchKeyword}&searchOption={$searchOption}'>&gt;&gt;</a></li>";
     }
+
 ?>
                     </ul>
                 </div>

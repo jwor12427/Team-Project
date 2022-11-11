@@ -1,3 +1,7 @@
+<?php
+    include "../connect/session.php";
+	include "../connect/connect.php";
+?>
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -138,6 +142,10 @@
 
     <?php include "../include/footer.php" ?>
     <!-- //footer -->
+    <?php include "../login/login.php" ?>
+    <!-- login -->
+    
+    <script src="../assets/js/login.js"></script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
